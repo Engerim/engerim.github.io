@@ -1,0 +1,29 @@
+<html><head>
+      <script type="text/javascript" src="https://e.video-cdn.net/v2/embed.js">
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+console.log(document.cookie);
+document.cookie = 'test=test2';
+var element = document.getElementById('lazyLoading');
+var player = document.createElement('div');
+player.setAttribute('mi24-video-player', '');
+player.setAttribute('config-type', 'vmpro');
+player.setAttribute('player-id', '8J46VJQ8CGzGomStjRzetq');
+player.setAttribute('video-id', 'DtRHJQZq11XKWk-ZJTj1pX');
+player.setAttribute('api-url', '//d-qa.video-cdn.net/play');
+element.appendChild(player);
+
+VideoPlayerCollection.addPlayerById('lazyLoading');
+
+console.log(document.cookie);
+}//]]> 
+
+</script>
+
+</head>
+
+<body>
+  <div id="lazyLoading"></div>
+
+
+</body></html>
